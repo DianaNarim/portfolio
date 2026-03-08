@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<title>Portfolio</title>
+	<style type="text/css">
+
+		* {
+		  box-sizing: border-box;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.container {
+  		
+  		  width: 100%;
+		  margin: auto;
+		  padding: 20px;
+		  background: whitesmoke;
+		  border-radius: 12px;
+		  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+		}
+
+		body {
+		  font-family: "Segoe UI", Arial, sans-serif;
+		  background: linear-gradient(135deg, #eef2f7, #dfe7f2);
+		}
+
+		
+		.head {
+			width: 100%;
+			height: 220px;
+			background: linear-gradient(90deg,rgba(9, 34, 51, 1) 21%, rgba(25, 53, 77, 1) 67%, rgba(48, 103, 117, 0.9) 100%);
+			box-shadow: 0px 25px 52px 17px rgba(16, 87, 142, 0.19);
+			margin-bottom: 60px;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+		
+			padding-left: 120px;
+		}
+
+		.name {
+			position: absolute;
+			font-size: 60px;
+			font-weight: 900;
+			color: rgba(255,255,255, 0.40);		
+			left: 400px;		
+		}
+
+		.t-1 {
+			position: absolute;
+			font-size: 30px;
+			color: rgba(255,255,255, 0.80);		
+			left: 400px;
+			top: 90px;
+					
+		}
+
+		.t-main{
+			font-size: 100px; 
+			color: #36a1ad; 
+			transform: perspective(500px) rotateX(20deg);  
+			-webkit-text-stroke: 3px #36a1ad;
+		}
+
+		.bio {
+			height: 300px;
+			border-radius: 15px;
+			border: 1px solid #e3e3e3;
+			transition: 0.4s;
+			background: whitesmoke;
+		}
+
+		.bio:hover {
+			transform: translateY(-12px);
+			box-shadow: 0 25px 45px rgba(0,0,0,0.15);
+		}
+		.projects-title{
+	color:#1d2f40;
+	margin-bottom:30px;
+}
+
+.project-card{
+	position:relative;
+	overflow:hidden;
+	border-radius:15px;
+	background:linear-gradient(145deg,#f8fafc,#e8eef5);
+	border:1px solid #d6dde6;
+	transition:0.4s;
+}
+
+.project-card::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:5px;
+	background:linear-gradient(90deg,#36a1ad,#2f566b);
+}
+
+.project-card:hover{
+	transform:translateY(-10px) scale(1.02);
+	box-shadow:0 30px 60px rgba(0,0,0,0.15);
+}
+
+.project-title{
+	color:#1d2f40;
+	font-weight:700;
+}
+
+
+.project-btn{
+	border:none;
+	color:white;
+	padding:10px 22px;
+	border-radius:8px;
+	font-weight:600;
+	text-decoration:none;
+	transition:0.3s;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="head">
+
+		<div class="name"> NARIMBETOVA DIANA</div>
+		<div class="t-1 fw-medium" style="font-family: cursive;">  программист, 3дшник </div>
+
+		<a href="https://github.com/DianaNarim">
+    <img src="github.webp" style="width:220px; opacity:90%;">
+
+</a>
+
+	</div>
+  
+  <h1 class="text-center fw-bold t-main">CSS, HTML, JS, PHP, UNITY(C#)</h1>
+  
+  <div class="container d-flex p-3">
+
+   <div class="col-7 bio p-5">
+   	<h2 style="font-family: cursive; color:#2f566b">14 лет. Знаю базу программирования, 3д графики(моделирование, скульптинг, анимация).<div></div> Люблю видеоигры и все дела</h2>
+   </div>
+   <div class="col-5 bio p-5" style=" background:#1d2f40">
+   	<h2 style="color: white;">посмотреть все работы:</h2>
+   	<a href="https://github.com/DianaNarim"><h1 class="fw-bold" style="font-size: 100px;">Github</h1></a>
+   </div>
+    	
+
+  </div>
+
+  <div class="container" style="margin-top: 20px;">
+
+<h1 class="text-center fw-bold projects-title">САМЫЕ ИНТЕРЕСНЫЕ РАБОТЫ</h1>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Epic Games Clone</h3>
+<p style="font-family: cursive;color:#2f566b">Клон интерфейса Epic Games Store</p>
+<a href="https://github.com/DianaNarim/Epic-Games" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Donate Page</h3>
+<p style="font-family: cursive;color:#2f566b">Страница донатов с адаптивной версткой</p>
+<a href="https://github.com/DianaNarim/donate" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Twitter UI</h3>
+<p style="font-family: cursive;color:#2f566b">Копия интерфейса Twitter с выводом постов</p>
+<a href="https://github.com/DianaNarim/twitter" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Unity Projects</h3>
+<p style="font-family: cursive;color:#2f566b">Игровой прототипы на Unity (C#)</p>
+<a href="https://github.com/DianaNarim/Unity" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Библиотека книг с бд</h3>
+<p style="font-family: cursive;color:#2f566b"></p>
+<a href="https://github.com/DianaNarim/books" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+<div class="col-md-6">
+<div class="project-card p-4">
+<h3 class="project-title">Game Gravity Falls</h3>
+<p style="font-family: cursive;color:#2f566b"> тематическая игра на реакцию</p>
+<a href="https://github.com/DianaNarim/game-Gravity-Falls-" class="project-btn bg-primary">Открыть проект</a>
+</div>
+</div>
+
+</div>
+</div>
+
+  
+</body>
+</html>
